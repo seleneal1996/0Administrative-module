@@ -57,3 +57,15 @@ La base de datos del sistema ha sido diseñada siguiendo los principios de norma
 - **Leer Horario:** Para obtener la información de un horario, realiza una consulta a la tabla `Schedules` utilizando su `id_schedule`.
 - **Actualizar Horario:** Para actualizar la información de un horario, modifica los campos correspondientes en la tabla `Schedules` utilizando su `id_schedule`.
 - **Eliminar Horario:** Para eliminar un horario, elimina el registro correspondiente de la tabla `Schedules` utilizando su `id_schedule`.
+
+  ## Tecnologías Utilizadas
+
+- **Node.js:** Entorno de ejecución de JavaScript en el servidor.
+- **Express.js:** Framework web de Node.js para construir aplicaciones y APIs.
+- **MongoDB:** Base de datos NoSQL para almacenamiento de datos.
+- **Mongoose:** Biblioteca de modelado de datos para MongoDB y Node.js.
+- **JWT (JSON Web Tokens):** Estándar abierto para autenticación y creación de tokens de acceso.
+- **Bcrypt:** Biblioteca de encriptación de contraseñas para Node.js.
+- **dotenv:** Módulo para cargar variables de entorno desde un archivo `.env`.
+- **cors:** Middleware de Express.js para habilitar solicitudes CORS.
+- **morgan:** Middleware de registro de solicitudes HTTP para Node.js.
