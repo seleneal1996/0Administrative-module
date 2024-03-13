@@ -1,9 +1,10 @@
-let express = require('express'),
-  path = require('path'),
-  mongoose = require('mongoose'),
-  cors = require('cors'),
-  bodyParser = require('body-parser'),
-  dataBaseConfig = require('./database/db');
+const express = require('express');
+const path = require('path');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const createError = require('http-errors'); // Importa la función createError
+const dataBaseConfig = require('./database/db');
 
 // Connecting mongoDB
 
@@ -15,10 +16,10 @@ mongoose
   })
   .then(
     () => {
-      console.log('Database connected sucessfully ');
+      console.log('Database connected successfully');
     },
     (error) => {
-      console.log('Could not connected to database : ' + error);
+      console.log('Could not connect to database : ' + error);
     }
   );
 
@@ -51,7 +52,7 @@ app.listen(port, () => {
 
 // Find 404 and hand over to error handler
 app.use((req, res, next) => {
-  next(createError(404));
+  next(createError(404)); // Aquí puedes usar la función createError
 });
 
 // error handler
