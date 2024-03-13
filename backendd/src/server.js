@@ -6,6 +6,7 @@ let express = require('express'),
   dataBaseConfig = require('./database/db');
 
 // Connecting mongoDB
+
 mongoose.Promise = global.Promise;
 mongoose
   .connect(dataBaseConfig.db, {
