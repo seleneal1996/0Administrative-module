@@ -24,7 +24,18 @@ Este proyecto consiste en un sistema de gestión de colaboradores que permite ad
 - Cada horario está asociado a un colaborador específico mediante la columna `id_collaborator`.
 - Puede haber múltiples horarios para un mismo colaborador.
 
-## Operaciones CRUD
+## Normalización de la Base de Datos
+
+La base de datos del sistema ha sido diseñada siguiendo los principios de normalización para garantizar la integridad de los datos y reducir la redundancia. Aquí está una breve explicación de cómo se han aplicado los diferentes niveles de normalización:
+
+- **Primera Forma Normal (1FN):** Todos los campos contienen valores atómicos y no se permiten valores múltiples o compuestos en un solo campo. Por ejemplo, en la tabla `Collaborators`, cada atributo como `nombre`, `apellido` y `dni` contiene un único valor atómico.
+
+- **Segunda Forma Normal (2FN):** Todos los campos no clave dependen completamente de la clave primaria. En las tablas `Contracts`, `Schedules` y `Assignments`, los campos no clave dependen completamente de la clave primaria de la tabla correspondiente.
+
+- **Tercera Forma Normal (3FN):** No hay dependencias transitivas entre los campos no clave. La tabla `Contacts` se separa de la tabla `Collaborators` para evitar dependencias transitivas.
+
+- **Forma Normal de Boyce-Codd (BCNF):** Cada dependencia funcional en la base de datos está definida por una clave candidata.
+
 
 ### Colaboradores
 
