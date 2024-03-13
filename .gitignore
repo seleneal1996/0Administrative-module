@@ -128,3 +128,12 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+DockerFile
+*.env
+fly.toml
+Dockerfile
+.dockerignore
+node_modules
+fly.toml
+
