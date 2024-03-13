@@ -40,14 +40,14 @@ collaboratorRoute.route('/get-collaborator/:id').get((req, res) => {
 
 // Update collaborator
 collaboratorRoute.route('/update-collaborator/:id').put((req, res, next) => {
-    const { estado } = req.body;
+    const {nombre, apellido, estado } = req.body;
   
     // Verificar si el estado es un número
     if (typeof estado !== 'undefined' && !isNaN(estado)) {
       // Actualizar el colaborador solo con el estado proporcionado
       CollaboratorModel.findByIdAndUpdate(
         req.params.id,
-        { estado: estado },
+        { estado: estado, nombre: nombre,apellido: apellido },
         { new: true }, // Para devolver el colaborador actualizado
         (error, updatedCollaborator) => {
           if (error) {
