@@ -21,7 +21,7 @@ mongoose
     }
   );
 
-const songRoute = require('./routes/song.route');
+
 const collaboratorRoute = require('./routes/collaborators.route');
 const contractRoute = require('./routes/contracts.route');
 const scheduleRoute = require('./routes/schedules.route');
@@ -36,7 +36,6 @@ app.use(
 app.use(cors());
 
 // RESTful API root
-app.use('/api', songRoute);
 app.use('/api', collaboratorRoute);
 app.use('/api', contractRoute);
 app.use('/api', scheduleRoute);
