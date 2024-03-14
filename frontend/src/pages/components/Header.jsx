@@ -5,10 +5,10 @@ const Header = () => {
       <div className="d-flex">
         <img src={logo} />
         <h5 className="text-uppercase">
-          Campus
+          BSG
           {/* {lblPortalHeader} */}
           <br />
-          Cayetano
+          Institute
           {/* {lblDeNotasHeader} */}
         </h5>
       </div>

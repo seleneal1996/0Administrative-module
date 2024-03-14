@@ -39,3 +39,43 @@ export const deleteByIdCollaborator = async (id) => {
     throw new Error(error);
   }
 };
+
+export const getAllContracts = async () => {
+  try {
+    return await axiosDefault.get("get-contracts");
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
+export const getContractById = async (id) => {
+  try {
+    return await axiosDefault.get(`get-contract/${id}`);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
+export const createContract = async (data) => {
+  try {
+    return await axiosDefault.post("create-contract", data);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
+export const updateByIdContract = async (id, data) => {
+  try {
+    return await axiosDefault.put(`update-contract/${id}`, data);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
+export const deleteByIdContract = async (id) => {
+  try {
+    return await axiosDefault.delete(`delete-contract/${id}`);
+  } catch (error) {
+    throw new Error(error);
+  }
+};

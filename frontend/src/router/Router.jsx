@@ -7,6 +7,9 @@ const { ROUTES } = CONSTANTS;
 // Root routes
 const LoginPage = lazy(() => import("../pages/public/Login/Login.jsx"));
 const PanelPage = lazy(() => import("../pages/private/Panel/Panel.jsx"));
+const ContractsPage = lazy(() =>
+  import("../pages/private/Contracts/Contracts.jsx")
+);
 
 const Router = () => {
   const noAuthRoutes = () => {
@@ -22,17 +25,13 @@ const Router = () => {
     return (
       <>
         <Route path={ROUTES.PRIVATE.PANEL_ADMIN.to} element={<PanelPage />} />
+        <Route
+          path={ROUTES.PRIVATE.PANEL_CONTRACTS.to}
+          element={<ContractsPage />}
+        />
       </>
     );
   };
-
-  /*  const adminRoutes = () => {
-    return (
-      <>
-        <Route path={ROUTES.PUBLIC.SIGN_USER} element={<LoginPage />} />
-      </>
-    );
-  }; */
 
   return (
     <Suspense>

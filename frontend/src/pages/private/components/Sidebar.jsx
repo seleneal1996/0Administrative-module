@@ -7,6 +7,7 @@ import { useId } from "react";
 import BoxArrowInRight from "../../components/icons/BoxArrowInRight";
 import CONSTANTS from "../../../config/constants";
 import { matchFunction } from "../../../utilities/match.function";
+import ContractsIcon from "../../components/icons/ContractsIcon";
 
 const { ROUTES, NAVIGATE } = CONSTANTS;
 
@@ -25,7 +26,7 @@ const Sidebar = () => {
       <div className="sidebar">
         <div className="sidebartop d-flex">
           <div className="logo">
-            <img src={logomenu} alt="Logo Cayetano" />
+            <img src={logomenu} alt="Logo" />
           </div>
           <div className="menu">
             <DoubleArrowLeft />
@@ -35,22 +36,35 @@ const Sidebar = () => {
         <div className="divider" />
         <nav>
           <ul>
-            {NAVIGATE.map((item, index) => (
-              <li key={`${id}-${index}`}>
+          <li>
                 <Link
                   className={
-                    matchFunction(location.pathname, item.to)
+                    matchFunction(location.pathname, '/admin')
                       ? "nav-link active"
                       : "nav-link"
                   }
-                  to={`..${item.to}`}
+                  to={`../admin`}
                 >
                   <FileIcon height={24} width={24} />
 
-                  <span className="text">{item.label}</span>
+                  <span className="text">Panel Administrativo</span>
                 </Link>
               </li>
-            ))}
+
+              <li>
+                <Link
+                  className={
+                    matchFunction(location.pathname, '/contracts')
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                  to={`../contracts`}
+                >
+                  <ContractsIcon height={24} width={24} />
+
+                  <span className="text">Panel Administrativo</span>
+                </Link>
+              </li>
           </ul>
         </nav>
 

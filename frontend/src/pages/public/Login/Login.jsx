@@ -34,7 +34,7 @@ const Login = () => {
                 <div className="login-content d-flex align-items-center justify-content-center align-items-center ">
                   <div className="center">
                     <div className="log-title">
-                      <h1>Iniciar Sesion</h1>
+                      <h1>Iniciar Sesión</h1>
                     </div>
                     <form onSubmit={handleSubmit(onSubmit)}>
                       <p>
