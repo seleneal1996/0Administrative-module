@@ -1,0 +1,198 @@
+.btn-login {
+    width: 100%!important;
+}
+.btn-send {
+    background: var(--upch-primary);
+    border: 1px solid var(--upch-primary);
+    color: white;
+    width: 205px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-bottom: 7px;
+	&:hover {
+		color: #ffffff;
+    	background-color: var(--upch-primary-dark);
+    	border: 1px solid var(--upch-primary-dark);
+	}
+}
+.btn-primary {
+	background: var(--upch-primary)!important;
+    border: 1px solid var(--upch-primary)!important;
+    color: white;
+	border-radius: 0.45rem;
+	&:hover {
+		color: #ffffff;
+    	background-color: var(--upch-primary-dark)!important;
+    	border: 1px solid var(--upch-primary-dark)!important;
+	}
+	&:focus {
+		box-shadow: none!important;
+		outline: 0!important;
+	}
+}
+
+.btn-check:active+.btn-outline-danger, .btn-check:checked+.btn-outline-danger, .btn-outline-danger.active, .btn-outline-danger.dropdown-toggle.show, .btn-outline-danger:active {
+    color: #fff;
+    background-color: var(--upch-primary) !important;
+    border-color: var(--upch-primary) !important;
+}
+
+.btn-opciones {
+    transition: all .2s linear;
+    padding: 3px 0.6rem;
+    margin-right: 10px;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    span {
+        transition: all .2s linear;
+        font-weight: 300!important;
+        // max-width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+    display: block;
+    color: #343434;  
+    font-size: 13px;  }
+    i {
+        transition: all .2s linear;
+
+        color: var(--upch-primary);
+        opacity: .85;
+        font-weight: 600;
+    }
+    svg{
+        path{
+            fill:var(--upch-primary);
+            opacity: .85;
+        }
+    }
+
+    &:hover {
+        
+        color: #B01333;
+        background: #FFF1F3;
+        i {
+            opacity: 1;
+            font-weight: 600;
+        }
+        svg{
+            opacity: 1;
+        }
+        span {
+            font-weight: 400;
+            color: black;
+        }
+    }
+}
+
+.modal-footer {
+    .btn-secondary {
+        border-radius: .45rem;
+    }
+}
+
+
+
+
+.accordion-header {
+    .accordion-button {
+        font-size: 14px;
+    }
+}
+.accordion-button:not(.collapsed) {
+    color: #231f1f;
+    background-color: #ffffff;
+}
+
+.home .accordion-flush .accordion-item .accordion-button {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    box-shadow: none;
+    border-top-left-radius: 0.45rem!important;
+    border-top-right-radius: 0.45rem!important;
+
+}
+.home .accordion-item {
+    box-shadow: 0px 16px 21px rgb(0 0 0 / 4%);
+    border-radius: 0.45rem!important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' style='&%2310; fill: %23b01333;&%2310;'/%3E%3C/svg%3E");
+
+}
+
+.accordion-button::after {
+    width: 1.1rem;
+    height: 1.1rem;   
+    background-size: 1.1rem;
+}
+
+.modal-body .accordion-item{
+    border: 1px solid #dfdfdf!important;
+    margin-top: 1rem;
+}
+
+.modal-body .accordion-button {
+    padding: .6rem 1.25rem!important
+}
+.accordion {
+    p {
+        font-weight: 400;
+    }
+}
+.btn-opciones.dropdown-toggle::after {
+   display: none;
+}
+.btn-opciones-drop {
+    padding: 5px 0.6rem;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 13px;
+    i {
+        color: #b01333;
+        margin-right: 4px;
+        font-size: .9rem;
+    }
+}
+
+a.accordion-button {
+    &:hover {
+        color: #231f1f;
+    }
+}
+
+#nuevoConjunto, #editarConjunto, #editarEsquemaModal, #nuevoEsquemaModal, #editarDetalleEsquemaModal{
+	z-index: 1056;
+    background: #00000042;
+	
+}
+#editGrupo, #nuevoGrupo, #nuevoDetalleEsquemaModal, #edicionDetalleEsquemaModal, #listaEModal{
+	z-index: 1099;
+    background: #00000042;
+	
+}
+#formulaModal, #advertencia, #eliminarGrupo, #eliminarConjunto, #error {
+    z-index: 1199;
+    background: #00000042;
+}
+.btn-opciones.btn-estudiante{
+    background: #ffffff;
+    padding:0 5px !important;
+}
+
+@media(max-width:767px){
+    .card-body{
+        .btn.btn-sm.btn-outline-danger{
+            margin-bottom: 1rem;
+        }
+        .rounded.bg-light{
+            margin-bottom: 1rem;
+        }
+    }
+}

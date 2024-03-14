@@ -1,0 +1,277 @@
+
+.vh-95{
+    height: 95.3vh;
+	
+}
+
+.login {
+    .card{
+        border-radius: 0.65rem;
+    }
+    .text-browsers {
+        font-size: 12.5px;
+        padding: 1.2rem 0;
+        span {
+            vertical-align: text-bottom;
+        }
+    }
+    h1 {
+        text-align: left;
+        font-size: 23px;
+        margin-bottom: 3px;
+        font-weight: 600;
+    }
+    .config-lang {
+        float: right;
+        background: #F5F5F5;
+        padding: 0.15rem 0 0.15rem 0.65rem;
+        border-radius: 5px;
+        .select-lang {
+            width: fit-content;
+            border: 0;
+            display: initial;
+            padding: 0 1.7rem 0 4px;
+            font-size: 13px;
+            background: #F5F5F5 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23b01333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E") no-repeat;
+            background-position: right 0.45rem center;
+            background-size: 16px 12px;
+            &:focus {   
+                box-shadow: none;
+                outline: none;
+        }
+        .fa-globe{
+            vertical-align: middle;
+            font-size: 14px;
+        }
+    }
+}
+    
+    .login-header {
+        padding: 1.25rem 1.25rem 1.05rem;
+        border-bottom: 1px solid #D3D3D3;
+        @media (max-width: 1399px){
+            padding: 1rem 2.25rem 1rem;
+        }
+        img {            
+            height: 43px;
+            width: 32px;
+        }
+        h5 {
+            padding-left: 12px;
+            font-size: 1.05rem;
+        }
+    }
+    .login-content{
+        width: 100%;
+        height: 85%;
+        a {
+            font-size: 13px;
+        }
+        .description {
+            p {
+                width: 340px;
+            }
+            a{
+                color: #313131;
+                margin: 0.55rem 0 1.4rem 0;
+
+            }
+        }
+        .log-title {     
+            width: -moz-fit-content;       
+            width: fit-content;
+            margin-bottom: 0.9rem;
+            .separator {
+                width: 45%;
+                height: 3px;
+                background-color: var(--upch-secondary);                
+              
+            }
+        }
+    }
+    form {
+        width: 350px;
+        margin: 0 auto;
+        p, label {
+            line-height: 1.1;
+            font-size: 14px;
+        }
+        label {
+            padding-bottom: 5px;
+            color:#000000
+        }
+        .login-control {
+            background: #fff;
+            border: 1px solid #D3D3D3;
+            border-radius: 6px;
+            padding: .325rem .65rem;
+            &:focus {   
+                    color: #000000;
+                    background-color: #fff;
+                    border-color: #D3D3D3;
+                    outline: 0;
+                    box-shadow: none;
+            }
+        }
+    }
+    .carousel-item {
+        img{
+            object-fit: cover;
+            height: 95.5vh;
+        }
+    }
+    
+    .carousel-caption {
+        bottom: 3.25rem;
+        background: rgba(176, 19, 51, 0.57);
+        -webkit-backdrop-filter:blur(8px);
+        backdrop-filter: blur(8px);
+        border-radius: 6px;
+        padding: 1.5rem;
+        p.description {
+            line-height: 1.2;
+            font-size: 13px;
+        }
+    }
+    .carousel-indicators {
+        margin-left: 5%;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+}
+.vcode {
+    margin: 2.5rem 0;
+}
+.vcode-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #828282;
+    border-radius: 5px;
+    margin: 0 3px;
+    &:focus {
+        border-color: var(--upch-primary);
+    }
+  }
+
+.success-animation {
+    margin: 0 auto 40px
+}
+
+.checkmark-animation {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #00A76D;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px #00A76D;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    position:relative;
+    top: 5px;
+    right: 0;
+   margin: 0 auto;
+}
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #00A76D;
+    fill: #fff;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+ 
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #00A76D;
+    }
+}
+@media (max-width:865px){
+	
+	.login {
+        form {
+            width: 300px!important
+         }
+    }
+}
+@media (max-width:767px){
+	
+	.login {
+        .carousel-div {
+            display: none;
+        }
+        .carousel {
+            display: none;
+        }
+        h1 {
+            width: 100%;
+        }
+        .btn-send {
+            width: 100%;
+        }
+        h1.title-success{
+            width: auto;
+        }
+		.card {
+			border-radius: 0;
+		}
+		.vh-80 , .vh-95 {
+			height: 95vh;
+		}
+        .login-content {
+            padding: 1rem;
+            height: 100%;
+            .description{
+                p {
+                    width: 325px;
+                }
+             } 
+        }
+        .form-div {
+            height: 80vh;
+        }
+        form {
+            width: 300px
+         }
+
+        .text-browsers {
+            display:none;
+        }
+         
+        .login-header {
+            border-bottom: 2px solid var(--upch-primary);
+        }
+	}
+}

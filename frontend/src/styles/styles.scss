@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap");
+// @import url(../src/assets/assets/icons/font-awesome/css/font-awesome.min.css);
+// @import url(../src/assets/assets/icons/font-awesome/css/all.css);
+// @import url(../src/assets/assets/icons/themify-icons-font/themify-icons.css);
+@import url(../assets/assets/icons/font-awesome/css/font-awesome.min.css);
+@import url(../assets/assets/icons/font-awesome/css/all.css);
+@import url(../assets/assets/icons/themify-icons-font/themify-icons.css);
+
+@import "base/variables";
+@import "base/utilities";
+@import "base/base";
+
+@import "layout/header";
+@import "layout/menu";
+@import "layout/footer";
+
+@import "components/carousel";
+@import "components/cards";
+@import "components/forms";
+@import "components/buttons";
+@import "components/tables";
+@import "components/calendar";
+@import "components/iconAnimation";
+@import "components/wizard";
+
+@import "views/login";
+@import "views/dashboard";
+@import "views/notas";
